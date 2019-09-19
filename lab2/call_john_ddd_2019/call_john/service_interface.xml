@@ -22,7 +22,7 @@
     </target>
   </query>
 
-  <validator name="ContactValidity">
+  <validator name="Selected_contactValidator">
     <parameters>
       <parameter predicate="selected_contact" format="grammar_entry"/>
     </parameters>
@@ -40,10 +40,16 @@
     </target>
   </validator>
 
-  <entity_recognizer name="CallJohnRecognizer">
+  <entity_recognizer name="NameRecognizer">
     <target>
       <device_module device="CallJohnDevice"/>
     </target>
   </entity_recognizer>
+
+  <entity_recognizer name="PhoneRecognizer">
+    <target>
+      <device_module device="CallJohnDevice"/>
+    </target>
+  </entity_recognizer>    
 
 </service_interface>
