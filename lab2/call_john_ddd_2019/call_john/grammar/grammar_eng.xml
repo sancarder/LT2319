@@ -46,16 +46,18 @@
 
   <validity name="ContactValidity">No number found for  <slot predicate="selected_contact" type="individual"/></validity>
   <validity name="PhoneNumberValidity">No contact found named  <slot predicate="selected_contact" type="individual"/></validity>
+  <validity name="Selected_contactValidator">invalid parameters <slot predicate="selected_contact" type="individual"/></validity>
 
 
-  <individual name="john">
+  <individual name="John">
     <one-of>
       <item>John</item>
       <item>John's</item>
+      <item>john</item>
     </one-of>
   </individual>
 
-  <individual name="mary">
+  <individual name="Mary">
     <one-of>
       <item>Mary</item>
       <item>Mary's</item>
