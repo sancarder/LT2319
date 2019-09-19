@@ -5,14 +5,13 @@
 
   <sort name="contact" dynamic="true"/>
   <sort name="phone" dynamic="true"/>
-  <sort name="number" dynamic="true"/>
 
   <predicate name="selected_contact" sort="contact"/>
   <predicate name="phone_type" sort="phone"/>
-  <predicate name="phone_number" sort="number"/>
+  <predicate name="phone_number" sort="string"/>
 
-  <individual name="john" sort="contact"/>
-  <individual name="mary" sort="contact"/>
+  <individual name="John" sort="contact"/>
+  <individual name="Mary" sort="contact"/>
   <individual name="mobile" sort="phone"/>
   <individual name="work" sort="phone"/>
   <individual name="home" sort="phone"/>
