@@ -1,0 +1,15 @@
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='mobile', name=u'mobile')
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mobile'
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='home', name=u'home')
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'home'
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry='John', name=u'john')
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'john'
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry="John's", name=u'john')
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'john'
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='work', name=u'work')
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'work'
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry='Mary', name=u'mary')
+2019-09-17 21:18:27,968 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mary'
+2019-09-17 21:18:27,969 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry="Mary's", name=u'mary')
+2019-09-17 21:18:27,969 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mary'
+2019-09-17 21:18:27,969 - interactiontest - DEBUG - Backend()

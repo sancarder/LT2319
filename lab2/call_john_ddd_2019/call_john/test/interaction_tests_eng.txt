@@ -1,0 +1,32 @@
+--- main menu
+S> What would you like to do?
+
+--- call (incremental)
+S> What would you like to do?
+U> make a call
+S> Which contact?
+U> john
+S> Which phone?
+U> mobile
+S> Calling John's mobile
+
+--- call (one-shot)
+S> What would you like to do?
+U> call john's mobile
+S> Calling John's mobile
+
+--- call (over answering)
+S> What would you like to do?
+U> call John
+S> Which phone?
+U> mobile
+S> Calling John's mobile
+
+--- phone number (incremental)
+S> What would you like to do?
+U> I want to know a contact's number
+S> Which contact?
+U> Mary
+S> Which phone?
+U> work
+S> It's 0784736475

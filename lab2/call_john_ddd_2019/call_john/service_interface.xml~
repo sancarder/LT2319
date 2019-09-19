@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+
+  <action name="Call">
+    <parameters>
+      <parameter predicate="selected_contact" format="value"/>
+      <parameter predicate="phone_type" format="value"/>
+    </parameters>
+    <failure_reasons/>
+    <target>
+      <device_module device="CallJohnDevice"/>
+    </target>
+  </action>
+
+  <query name="phone_number">
+    <parameters>
+      <parameter predicate="selected_contact" format="value"/>
+      <parameter predicate="phone_type" format="value"/>
+    </parameters>
+    <target>
+      <device_module device="CallJohnDevice"/>
+    </target>
+  </query>
+
+  <validator name="ContactValidity">
+    <parameters>
+      <parameter predicate="selected_contact" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module devide="CallJohnDevice"/>
+    </target>
+  </validator>
+
+  <validator name="PhoneNumberValidity">
+    <parameters>
+      <parameter predicate="selected_contact" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="CallJohnDevice"/>
+    </target>
+  </validator>
+
+  <entity_recognizer name="CallJohnRecognizer">
+    <target>
+      <device_module device="CallJohnDevice"/>
+    </target>
+  </entity_recognizer>
+
+</service_interface>

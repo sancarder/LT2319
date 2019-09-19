@@ -1,0 +1,4 @@
+2019-09-13 15:55:27,705 - build - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='mobile', name=u'mobile')
+2019-09-13 15:55:27,705 - build - DEBUG - EntityDb(call_john): add_entity returns u'mobile'
+2019-09-13 15:55:27,705 - build - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry='John', name=u'john')
+2019-09-13 15:55:27,705 - build - DEBUG - EntityDb(call_john): add_entity returns u'john'

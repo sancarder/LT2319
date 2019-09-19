@@ -1,0 +1,74 @@
+2019-09-14 17:37:44,813 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='mobile', name=u'mobile')
+2019-09-14 17:37:44,813 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mobile'
+2019-09-14 17:37:44,813 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='home', name=u'home')
+2019-09-14 17:37:44,813 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'home'
+2019-09-14 17:37:44,813 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry='John', name=u'john')
+2019-09-14 17:37:44,813 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'john'
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry="John's", name=u'john')
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'john'
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='work', name=u'work')
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'work'
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry='Mary', name=u'mary')
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mary'
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry="Mary's", name=u'mary')
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mary'
+2019-09-14 17:37:44,814 - interactiontest - DEBUG - Backend()
+2019-09-14 17:37:45,406 - interactiontest - ERROR - Encountered an error, sending event 'BACKEND_ERROR'
+Traceback (most recent call last):
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 100, in handle_event_from_external_queue
+    self._handle_external_event(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 113, in _handle_external_event
+    resulting_events = self._send_event_through_components(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 124, in _send_event_through_components
+    moves = self._dm.act(events)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/component.py", line 47, in act
+    self._act_on_queued_events()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/component.py", line 86, in _act_on_queued_events
+    self._handle_event(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/component.py", line 101, in _handle_event
+    self.forward_event_internally_and_externally(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/component.py", line 104, in forward_event_internally_and_externally
+    self._event_dispatcher.dispatch(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/event_dispatcher.py", line 27, in dispatch
+    self._send_event_to_subscribing_modules(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/event_dispatcher.py", line 49, in _send_event_to_subscribing_modules
+    handler, event.get_type(), event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/event_dispatcher.py", line 55, in _send_to_subscribing_module
+    module.process_event(protected_event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/lib/module.py", line 50, in process_event
+    handler()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/dme_module.py", line 56, in _handle_interpretation
+    self._set_input_event_and_run_update_and_select()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/dme_module.py", line 61, in _set_input_event_and_run_update_and_select
+    self.run_update_and_set_ddd_when_needed()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/dme_module.py", line 66, in run_update_and_set_ddd_when_needed
+    self.run_update()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/dme_module.py", line 131, in run_update
+    self.update_module.run(self._tis)
+  File "tdm/dm/update.py", line 167, in tdm.dm.update.UpdateModule.run
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/isu_module.py", line 128, in repeatGroupSequence
+    if self._apply(ruleGroup, identifier, tis):
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/isu_module.py", line 139, in _apply
+    if self.applyRule(rule, tis):
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/isu_module.py", line 102, in applyRule
+    rule.applyEffects(self._ddd_manager)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/isu_rule.py", line 26, in applyEffects
+    apply(self.effects, arguments)
+  File "tdm/dm/update.py", line 2015, in tdm.dm.update.exec_dev_query.effects
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/ddd/device_handler.py", line 359, in query
+    "Consider adding a validator to your service interface:\n\n%s" % (question, commitments, example))
+IllegalQueryResultException: Expected a result for query ?X.phone_number(X) with commitments {} but got none. Have you properly validated the predicates in commitment?
+
+Consider adding a validator to your service interface:
+
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+  <validator name="PredicateValidator">
+    <parameters>
+      <parameter predicate="predicate" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="CallJohnDevice"/>
+    </target>
+  </validator>
+</service_interface>

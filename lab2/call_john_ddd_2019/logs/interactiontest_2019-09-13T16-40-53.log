@@ -1,0 +1,7 @@
+2019-09-13 16:40:53,340 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='mobile', name=u'mobile')
+2019-09-13 16:40:53,341 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mobile'
+2019-09-13 16:40:53,341 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry='John', name=u'john')
+2019-09-13 16:40:53,341 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'john'
+2019-09-13 16:40:53,341 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry="John's", name=u'john')
+2019-09-13 16:40:53,341 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'john'
+2019-09-13 16:40:53,341 - interactiontest - DEBUG - Backend()

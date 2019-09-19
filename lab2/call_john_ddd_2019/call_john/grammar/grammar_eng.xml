@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  <action name="call">
+    <one-of>
+      <item>make a call</item>
+      <item>call <slot predicate="selected_contact"/> <slot predicate="phone_type"/></item>
+      <item>call <slot predicate="selected_contact"/></item>
+    </one-of>
+  </action>
+
+  <question speaker="system" predicate="selected_contact" type="wh_question">which contact</question>
+
+  <question speaker="system" predicate="phone_type" type="wh_question">which phone</question>
+  
+  <question speaker="user" predicate="phone_number" type="wh_question">
+    <one-of>
+      <item>i want to know a contact's number</item>
+    </one-of>
+  </question>
+
+  <question speaker="all" predicate="phone_number" type="wh_question">
+    <one-of>
+      <item>It's <slot predicate="phone_number"/></item>
+    </one-of>
+  </question>
+
+  <validity name="ContactValidity">No number found for  <slot predicate="selected_contact" type="individual"/></validity>
+  <validity name="PhoneNumberValidity">No contact found named  <slot predicate="selected_contact" type="individual"/></validity>
+
+
+  <individual name="john">
+    <one-of>
+      <item>John</item>
+      <item>John's</item>
+    </one-of>
+  </individual>
+
+  <individual name="mary">
+    <one-of>
+      <item>Mary</item>
+      <item>Mary's</item>
+    </one-of>
+  </individual>
+
+  <individual name="mobile">
+    <one-of>
+      <item>mobile</item>
+    </one-of>
+  </individual>
+
+  <individual name="work">
+    <one-of>
+      <item>work</item>
+    </one-of>
+  </individual>
+
+  <individual name="home">
+    <one-of>
+      <item>home</item>
+    </one-of>
+  </individual>
+
+  <report action="Call" status="ended">calling <slot predicate="selected_contact"/>'s <slot predicate="phone_type"/></report>
+  
+</grammar>

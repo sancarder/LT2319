@@ -1,0 +1,36 @@
+2019-09-17 00:18:04,671 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='mobile', name=u'mobile')
+2019-09-17 00:18:04,671 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mobile'
+2019-09-17 00:18:04,671 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='home', name=u'home')
+2019-09-17 00:18:04,671 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'home'
+2019-09-17 00:18:04,671 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry='John', name=u'john')
+2019-09-17 00:18:04,671 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'john'
+2019-09-17 00:18:04,671 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry="John's", name=u'john')
+2019-09-17 00:18:04,672 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'john'
+2019-09-17 00:18:04,672 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'phone', grammar_entry='work', name=u'work')
+2019-09-17 00:18:04,672 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'work'
+2019-09-17 00:18:04,672 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry='Mary', name=u'mary')
+2019-09-17 00:18:04,672 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mary'
+2019-09-17 00:18:04,672 - interactiontest - DEBUG - EntityDb(call_john): add_entity(sort=u'contact', grammar_entry="Mary's", name=u'mary')
+2019-09-17 00:18:04,672 - interactiontest - DEBUG - EntityDb(call_john): add_entity returns u'mary'
+2019-09-17 00:18:04,672 - interactiontest - DEBUG - Backend()
+2019-09-17 00:18:04,699 - interactiontest - ERROR - Encountered an error, sending event 'BACKEND_ERROR'
+Traceback (most recent call last):
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 100, in handle_event_from_external_queue
+    self._handle_external_event(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 113, in _handle_external_event
+    resulting_events = self._send_event_through_components(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 126, in _send_event_through_components
+    responses = self._nlg.generate(events)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/nlg/component.py", line 27, in generate
+    resulting_events = [result for result in all_results if result is not None]
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/nlg/component.py", line 35, in _generate_events
+    yield self._generator.generate(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/nlg/generator.py", line 26, in generate
+    utterance_parts = [self._generate_utterance_part(move) for move in moves]
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/nlg/generator.py", line 40, in _generate_utterance_part
+    return self.move_to_string(move, ddd)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/nlg/generator.py", line 51, in move_to_string
+    return self._handle_failed_generation(move, grammar, parse_exception)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/nlg/generator.py", line 61, in _handle_failed_generation
+    raise GenerateError(message)
+GenerateError: Generator: failed to generate move 'Move(ask(?set([goal(resolve(?X.phone_number(X))), goal(perform(call))])), ddd_name=u'call_john')' with grammar 'call_john_eng_GfGrammarForDynamicEntities': Expected parse results for u'Move ( ask ( ? set ( [ goal ( resolve ( ? X . phone_number ( X ) ) ) , goal ( perform ( call ) ) ] ) ) )' with category 'System' and grammar_path u'grammar/build/eng/call_john_sem.pgf' but got none
