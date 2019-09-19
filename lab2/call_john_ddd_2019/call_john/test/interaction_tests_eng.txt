@@ -26,7 +26,7 @@ S> Calling John's mobile
 S> What would you like to do?
 U> I want to know a contact's number
 S> Which contact?
-U> Mary
+U> John
 S> Which phone?
-U> work
+U> mobile
 S> It's 0784736475
