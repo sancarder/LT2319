@@ -44,31 +44,38 @@ class CallJohnDevice(DddDevice):
 
     class phone_number(DeviceWHQuery):
         def perform(self, selected_contact, phone_type):
+            print("Query phone_number:")
+            print(selected_contact)
+            print(phone_type)
             number = self.device.PHONE_NUMBERS.get(selected_contact).get(phone_type)
+            print(number)
             return [number]
 
-    class ContactValidity(Validity):
+    class Selected_contactValidator(Validity):
+        print("Entering class Selected_contactValidator")
         def is_valid(self, selected_contact):
             
             try:
-                self.device.JOHN
+                self.device.CONTACTS.get(selected_contact)
             except Exception as e:
                 return False
             return True
 
     class PhoneNumberValidity(Validity):
+        print("Entering class PhoneNumberValidity")
         def is_valid(self, selected_contact):
             print(selected_contact)
             
             try:
-                self.device.PHONE_NUMBERS.get[selected_contact]
+                self.device.PHONE_NUMBERS.get(selected_contact)
 
             except Exception as e:
                 print(e.args)
                 return False
             return True
 
-    class CallJohnRecognizer(EntityRecognizer):
+    class NameRecognizer(EntityRecognizer):
+        print("Entering NameRecognizer")
         def recognize(self, string, unused_language):
             result = []
             words = string.lower().split()
@@ -79,4 +86,24 @@ class CallJohnDevice(DddDevice):
                         "grammar_entry": contact
                     }
                     result.append(recognized_entity)
+            print("NameRecognizer:")
+            print(result)
+            return result
+
+
+    class PhoneRecognizer(EntityRecognizer):
+        print("Entering PhoneRecognizer")
+        def recognize(self, string, unused_language):
+            result = []
+            words = string.lower().split()
+            for contact in self.device.PHONE_NUMBERS.keys():
+                for phone in contact:
+                    if phone.lower() in words:
+                        recognized_entity = {
+                            "sort": "phone",
+                            "grammar_entry": phone
+                        }
+                        result.append(recognized_entity)
+            print("PhoneRecognizer:")
+            print(result)
             return result
