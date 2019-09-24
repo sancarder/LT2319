@@ -22,10 +22,9 @@
     </target>
   </query>
 
-  <validator name="PhoneNumberValidity">
+  <validator name="PhoneNumberAvailable">
     <parameters>
-      <parameter predicate="selected_contact" format="grammar_entry"/>
-      <parameter predicate="phone_type" format="grammar_entry"/>
+      <parameter predicate="selected_contact" format="value"/>
     </parameters>
     <target>
       <device_module device="CallJohnDevice"/>
