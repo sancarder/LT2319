@@ -22,34 +22,14 @@
     </target>
   </query>
 
-  <validator name="Selected_contactValidator">
-    <parameters>
-      <parameter predicate="selected_contact" format="grammar_entry"/>
-    </parameters>
-    <target>
-      <device_module device="CallJohnDevice"/>
-    </target>
-  </validator>
-
   <validator name="PhoneNumberValidity">
     <parameters>
       <parameter predicate="selected_contact" format="grammar_entry"/>
+      <parameter predicate="phone_type" format="grammar_entry"/>
     </parameters>
     <target>
       <device_module device="CallJohnDevice"/>
     </target>
   </validator>
-
-  <entity_recognizer name="NameRecognizer">
-    <target>
-      <device_module device="CallJohnDevice"/>
-    </target>
-  </entity_recognizer>
-
-  <entity_recognizer name="PhoneRecognizer">
-    <target>
-      <device_module device="CallJohnDevice"/>
-    </target>
-  </entity_recognizer>    
 
 </service_interface>

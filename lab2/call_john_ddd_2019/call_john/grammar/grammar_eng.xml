@@ -44,10 +44,7 @@
     </one-of>
   </question>
 
-  <validity name="ContactValidity">No number found for  <slot predicate="selected_contact" type="individual"/></validity>
   <validity name="PhoneNumberValidity">No contact found named  <slot predicate="selected_contact" type="individual"/></validity>
-  <validity name="Selected_contactValidator">invalid parameters <slot predicate="selected_contact" type="individual"/></validity>
-
 
   <individual name="John">
     <one-of>
