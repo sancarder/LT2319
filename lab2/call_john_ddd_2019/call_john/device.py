@@ -44,19 +44,13 @@ class CallJohnDevice(DddDevice):
 
     class phone_number(DeviceWHQuery):
         def perform(self, selected_contact, phone_type):
-            print("Query phone_number:")
-            #print(selected_contact)
-            #print(phone_type)
             number = self.device.PHONE_NUMBERS.get(selected_contact).get(phone_type)
-            #print(number)
             return [number]
 
-    class PhoneNumberValidity(Validity):
-        def is_valid(self, selected_contact, phone_type):
-            print("Validating...")
-            print(selected_contact)
-            print(phone_type)
-            phone_number = self.device.PHONE_NUMBERS[selected_contact][phone_type]
-            print(phone_number)
-            if phone_number != None:
+    class PhoneNumberAvailable(Validity):
+        def is_valid(self, selected_contact):
+            contact_numbers = self.device.PHONE_NUMBERS.get(selected_contact)
+            if contact_numbers == None:
+                return False
+            else:
                 return True
