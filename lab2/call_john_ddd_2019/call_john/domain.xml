@@ -4,6 +4,14 @@
     <plan>
       <forget_all/>
       <findout type="goal"/>
+      <findout type="alt_question">
+	<alt>
+	  <perform action="call"/>
+	</alt>
+        <alt>
+          <resolve type="wh_question" predicate="phone_number"/>
+        </alt>
+      </findout>
     </plan>
   </goal>  
 
@@ -21,12 +29,9 @@
   <goal type="resolve" question_type="wh_question" predicate="phone_number">
     <plan>
       <findout type="wh_question" predicate="selected_contact"/>
-      <dev_query type="wh_question" predicate="phone_number"/>
+      <findout type="wh_question" predicate="phone_type"/>
+      <dev_query predicate="phone_number" type="wh_question"/>
     </plan>
   </goal>
-
-  <parameters predicate="phone_number">
-    <background predicate="selected_contact"/>
-  </parameters>
 
 </domain>
