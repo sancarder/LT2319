@@ -1,0 +1,22 @@
+--- main menu
+S> Do you want to know about the temperature or the current weather?
+
+--- temperature (menu driven)
+U> what is the temperature
+S> What city?
+U> london
+S> What country?
+U> UK
+S> The temperature is *
+
+--- temperature (menu driven)
+U> what is the weather
+S> What city?
+U> london
+S> What country?
+U> UK
+S> The weather is *
+
+--- temperature (oneshot)
+U> what is the temperature in london, uk
+S> The temperature is *

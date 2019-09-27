@@ -1,0 +1,5 @@
+2019-09-27 14:59:35,142 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'city', grammar_entry='London', name=u'city_london')
+2019-09-27 14:59:35,142 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'city_london'
+2019-09-27 14:59:35,142 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'country', grammar_entry='UK', name=u'country_uk')
+2019-09-27 14:59:35,142 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'country_uk'
+2019-09-27 14:59:35,143 - interactiontest - DEBUG - Backend()

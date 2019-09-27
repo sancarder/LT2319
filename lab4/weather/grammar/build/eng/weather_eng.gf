@@ -1,0 +1,54 @@
+concrete weather_eng of weather = TDM_eng, Integers_eng ** open Utils_eng, Prelude in {
+
+lin
+
+top_request_1 city_to_search = ss ("top " ++ city_to_search.s);
+up = (mkverb "up" "up" "up"|mkverb "back" "back" "back"|mkverb "go back" "go back" "go back");
+city_london = ss ((("" ++ CAPIT ++ "london")));
+country_uk = ss ((("" ++ CAPIT ++ "u" ++ CAPIT ++ BIND ++ "k")));
+city_to_search = ss "what city";
+city_to_search_sys_answer individual = answer (individual.s) individual.s;
+city_to_search_sortal_usr_answer answer = answer;
+city_to_search_propositional_usr_answer answer = answer;
+city_user_answer answer = answer;
+city_individual individual = individual;
+weather = ss (("weather"));
+weather_resolve_ynq_2 = resolve_ynq weather;
+ask_weather = ss (("what is the weather"));
+weather_sys_answer_0 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r0_"));
+weather_sys_answer_1 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r1_"));
+weather_sys_answer_2 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r2_"));
+weather_sys_answer_3 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r3_"));
+weather_sys_answer_4 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r4_"));
+weather_sys_answer_5 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r5_"));
+weather_sys_answer_6 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r6_"));
+weather_sys_answer_7 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r7_"));
+weather_sys_answer_8 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r8_"));
+weather_sys_answer_9 = answer (("" ++ CAPIT ++ "the weather is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r9_"));
+weather_sortal_usr_answer answer = answer;
+weather_propositional_usr_answer answer = answer;
+country_to_search = ss "what country";
+country_to_search_sys_answer individual = answer (individual.s) individual.s;
+country_to_search_sortal_usr_answer answer = answer;
+country_to_search_propositional_usr_answer answer = answer;
+country_user_answer answer = answer;
+country_individual individual = individual;
+temperature = ss (("temperature"));
+temperature_resolve_ynq_3 = resolve_ynq temperature;
+temperature_user_question_4 city_to_search country_to_search = ss ("what is the temperature in " ++ city_to_search.s ++ ", " ++ country_to_search.s);
+ask_temperature = ss (("what is the temperature"));
+temperature_sys_answer_0 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r0_"));
+temperature_sys_answer_1 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r1_"));
+temperature_sys_answer_2 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r2_"));
+temperature_sys_answer_3 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r3_"));
+temperature_sys_answer_4 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r4_"));
+temperature_sys_answer_5 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r5_"));
+temperature_sys_answer_6 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r6_"));
+temperature_sys_answer_7 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r7_"));
+temperature_sys_answer_8 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r8_"));
+temperature_sys_answer_9 = answer (("" ++ CAPIT ++ "the temperature is _" ++ CAPIT ++ BIND ++ "s" ++ CAPIT ++ BIND ++ "t" ++ CAPIT ++ BIND ++ "r9_"));
+temperature_sortal_usr_answer answer = answer;
+temperature_propositional_usr_answer answer = answer;
+unknown_string unknown = unknown;
+mkUnknown string = string;
+}

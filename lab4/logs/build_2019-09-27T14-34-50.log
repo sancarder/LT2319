@@ -1,0 +1,4 @@
+2019-09-27 14:34:50,553 - build - DEBUG - EntityDb(weather): add_entity(sort=u'city', grammar_entry='London', name=u'city_london')
+2019-09-27 14:34:50,553 - build - DEBUG - EntityDb(weather): add_entity returns u'city_london'
+2019-09-27 14:34:50,553 - build - DEBUG - EntityDb(weather): add_entity(sort=u'country', grammar_entry='UK', name=u'country_uk')
+2019-09-27 14:34:50,553 - build - DEBUG - EntityDb(weather): add_entity returns u'country_uk'
