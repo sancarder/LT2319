@@ -1,5 +1,5 @@
 --- main menu
-S> Do you want to know about the temperature or the current weather?
+S> What would you like to do?
 
 --- temperature (menu driven)
 U> what is the temperature
@@ -9,7 +9,21 @@ S> What country?
 U> UK
 S> The temperature is *
 
---- temperature (menu driven)
+--- temperature (oneshot)
+U> what is the temperature in london, uk
+S> The temperature is *
+
+--- temperature (over-answering)
+U> what is the temperature in london
+S> What country?
+U> UK
+S> The temperature is *
+
+--- temperature (with optional unit)
+--- U> what is the temperature in london, uk, celsius
+--- S> The temperature is *
+
+--- weather (menu driven)
 U> what is the weather
 S> What city?
 U> london
@@ -17,6 +31,12 @@ S> What country?
 U> UK
 S> The weather is *
 
---- temperature (oneshot)
-U> what is the temperature in london, uk
-S> The temperature is *
+--- weather (oneshot)
+U> what is the weather in london, uk
+S> The weather is *
+
+--- weather (over-answering)
+U> what is the weather in london
+S> What country?
+U> UK
+S> The weather is *

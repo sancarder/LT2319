@@ -8,8 +8,11 @@
   <predicate name="country_to_search" sort="country"/>
   <predicate name="temperature" sort="string"/>
   <predicate name="weather" sort="string"/>
+  <!-- <predicate name="preferred_unit" sort="string"/> -->
 
   <individual name="city_london" sort="city"/>
   <individual name="country_uk" sort="country"/>
+  <!-- <individual name="unit_metric" sort="string"/>
+  <individual name="unit_imperial" sort="string"/> -->
 
 </ontology>

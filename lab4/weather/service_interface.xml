@@ -5,6 +5,7 @@
     <parameters>
       <parameter predicate="city_to_search" format="grammar_entry"/>
       <parameter predicate="country_to_search" format="grammar_entry"/>
+      <!-- <parameter predicate="preferred_unit" format="grammar_entry" default="metric"/> -->
     </parameters>
     <target>
       <device_module device="WeatherDevice"/>
