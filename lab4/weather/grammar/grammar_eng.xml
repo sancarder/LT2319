@@ -18,9 +18,6 @@
    <question speaker="all" predicate="temperature" type="wh_question">the temperature</question>
    <question speaker="all" predicate="weather" type="wh_question">the current weather</question>
 
-   <question speaker="system" predicate="temperature" type="wh_question">the temperature</question>
-   <question speaker="system" predicate="weather" type="wh_question">the current weather</question>
-
    <question speaker="user" predicate="temperature" type="wh_question">
       <one-of>
 	 <item>what is the temperature</item>
