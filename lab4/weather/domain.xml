@@ -3,7 +3,6 @@
   <goal type="perform" action="top">
     <plan>
       <forget_all/>
-      <findout type="goal"/>
       <findout type="alt_question">
 	<alt>
 	  <resolve type="wh_question" predicate="temperature"/>
@@ -19,7 +18,8 @@
     <plan>
       <findout type="wh_question" predicate="city_to_search"/>
       <findout type="wh_question" predicate="country_to_search"/>
-      <!-- <bind type="wh_question" predicate="preferred_unit"/> -->
+      <!--Bind -->
+      <bind type="wh_question" predicate="unit_to_use"/> -->
       <dev_query predicate="temperature" type="wh_question"/>
     </plan>
   </goal>
