@@ -1,5 +1,5 @@
 --- main menu
-S> What would you like to do?
+S> Do you want to know the temperature or know the current weather?
 
 --- temperature (menu driven)
 U> what is the temperature
@@ -20,8 +20,8 @@ U> UK
 S> The temperature is *
 
 --- temperature (with optional unit)
---- U> what is the temperature in london, uk, celsius
---- S> The temperature is *
+U> what is the temperature in london, UK, fahrenheit
+S> The temperature is *
 
 --- weather (menu driven)
 U> what is the weather
@@ -40,3 +40,16 @@ U> what is the weather in london
 S> What country?
 U> UK
 S> The weather is *
+
+--- testing rasa (please)
+U> what is the weather in london please
+S> What country?
+U> UK
+S> The weather is *
+
+--- testing rasa (thanks)
+U> what is the weather in london
+S> What country?
+U> UK
+S> The weather is *
+U> thanks
