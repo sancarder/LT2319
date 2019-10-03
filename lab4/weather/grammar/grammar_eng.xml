@@ -18,9 +18,13 @@
    <question speaker="all" predicate="temperature" type="wh_question">the temperature</question>
    <question speaker="all" predicate="weather" type="wh_question">the current weather</question>
 
+   <question speaker="system" predicate="temperature" type="wh_question">the temperature</question>
+   <question speaker="system" predicate="weather" type="wh_question">the current weather</question>
+
    <question speaker="user" predicate="temperature" type="wh_question">
       <one-of>
 	 <item>what is the temperature</item>
+         <item>what is the temperature in <slot predicate="city_to_search"/>, <slot predicate="country_to_search"/>, <slot predicate="unit_to_use"/></item>
 	 <item>what is the temperature in <slot predicate="city_to_search"/>, <slot predicate="country_to_search"/></item>
 	 <item>what is the temperature in <slot predicate="city_to_search"/></item>
       </one-of>
@@ -36,12 +40,13 @@
 
    <question speaker="system" predicate="city_to_search" type="wh_question">what city</question>
    <question speaker="system" predicate="country_to_search" type="wh_question">what country</question>
+   <question speaker="system" predicate="unit_to_use" type="wh_question">what unit</question>
    <answer speaker="system" predicate="temperature" type="wh_question">The temperature is <slot predicate="temperature"/></answer>
    <answer speaker="system" predicate="weather" type="wh_question">The weather is <slot predicate="weather"/></answer>
 
    <individual name="city_london">London</individual>
    <individual name="country_uk">UK</individual>
-   <!-- <individual name="unit_metric">celsius</individual>
-   <individual name="unit_imperial">fahrenheit</individual> -->
+   <individual name="unit_metric">celsius</individual>
+   <individual name="unit_imperial">fahrenheit</individual>
 
 </grammar>
