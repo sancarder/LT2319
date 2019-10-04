@@ -5,7 +5,6 @@
     <parameters>
       <parameter predicate="city_to_search" format="grammar_entry"/>
       <parameter predicate="country_to_search" format="grammar_entry"/>
-      <!--unit -->
       <parameter predicate="unit_to_use" format="grammar_entry" default="metric"/>
     </parameters>
     <target>

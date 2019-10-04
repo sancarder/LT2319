@@ -3,18 +3,17 @@
 
   <sort name="city"/>
   <sort name="country"/>
+  <sort name="unit"/>
 
   <predicate name="city_to_search" sort="city"/>
   <predicate name="country_to_search" sort="country"/>
   <predicate name="temperature" sort="string"/>
   <predicate name="weather" sort="string"/>
-  <!--Unit -->
-  <predicate name="unit_to_use" sort="string"/>
+  <predicate name="unit_to_use" sort="unit"/>
 
   <individual name="city_london" sort="city"/>
   <individual name="country_uk" sort="country"/>
-  <!--- Units -->
-  <individual name="unit_metric" sort="string"/>
-  <individual name="unit_imperial" sort="string"/>
+  <individual name="unit_metric" sort="unit"/>
+  <individual name="unit_imperial" sort="unit"/>
 
 </ontology>

@@ -3,7 +3,7 @@
 
   <action name="top">
     <one-of>
-      <item>top <slot predicate="city_to_search" type="individual"/></item>
+      <item>main menu</item>
     </one-of>
   </action>
 
@@ -43,7 +43,19 @@
 
    <individual name="city_london">London</individual>
    <individual name="country_uk">UK</individual>
-   <individual name="unit_metric">celsius</individual>
-   <individual name="unit_imperial">fahrenheit</individual>
+
+   <individual name="unit_metric">
+     <one-of>
+       <item>metric</item>
+       <item>celsius</item>
+     </one-of>
+   </individual>
+   
+   <individual name="unit_imperial">
+     <one-of>
+       <item>imperial</item>
+       <item>fahrenheit</item>
+     </one-of>
+   </individual>
 
 </grammar>
