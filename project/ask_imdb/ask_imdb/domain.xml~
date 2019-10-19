@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="AskImdbDomain" is_super_domain="true">
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="alt_question">
+	<alt>
+	  <resolve type="wh_question" predicate="actors_to_search"/>
+	</alt>
+	<alt>
+	  <resolve type="wh_question" predicate="year_to_search"/>
+	</alt>
+      </findout>
+    </plan>
+  </goal>
+
+
+  <goal type="resolve" question_type="wh_question" predicate="actors_to_search">
+    <plan>
+      <findout type="wh_question" predicate="movie_to_lookup"/>
+      <dev_query predicate="actors_to_search" type="wh_question"/>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="year_to_search">
+    <plan>
+      <findout type="wh_question" predicate="movie_to_lookup"/>
+      <dev_query predicate="year_to_search" type="wh_question"/>
+    </plan>
+  </goal>
+
+</domain>

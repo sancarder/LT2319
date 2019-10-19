@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+
+  <query name="find_actors">
+    <parameters>
+      <parameter predicate="movie_to_lookup" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="AskImdbDevice"/>
+    </target>
+  </query>
+
+  <query name="find_year">
+    <parameters>
+      <parameter predicate="movie_to_lookup" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="AskImdbDevice"/>
+    </target>
+  </query>
+
+</service_interface>

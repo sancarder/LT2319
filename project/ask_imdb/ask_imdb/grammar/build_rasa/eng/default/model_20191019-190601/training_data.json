@@ -1,0 +1,692 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "outside"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "over"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "past"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "save"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "short"
+      }, 
+      {
+        "entities": [], 
+        "intent": "ask_imdb:question::actors_to_search", 
+        "text": "actors"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "since"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "than"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why is the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "then"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "through"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "throughout"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "to"
+      }, 
+      {
+        "entities": [], 
+        "intent": "ask_imdb:question::actors_to_search", 
+        "text": "I want to know the actors for a movie"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "toward"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "under"
+      }, 
+      {
+        "entities": [], 
+        "intent": "ask_imdb:question::year_to_search", 
+        "text": "the year for a movie"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "underneath"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "unlike"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "show"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "until"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "up"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "help"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "upon"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "with"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "do"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "within"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "without"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "worth"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "is"
+      }, 
+      {
+        "entities": [], 
+        "intent": "ask_imdb:question::year_to_search", 
+        "text": "year"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "it"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why's the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "make"
+      }, 
+      {
+        "entities": [], 
+        "intent": "ask_imdb:question::year_to_search", 
+        "text": "I want to know what year a movie was released"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "am"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "are"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "them"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "a"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "this"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "that"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "tell"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "I"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "you"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "he"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "she"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "they"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "them"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "start"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "his"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "her"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "my"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "mine"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "their"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "your"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "stop"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "us"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "our"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how's"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how is"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how's the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "enable"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how is the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when's"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when is"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when is the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when's the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "disable"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what is"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what's"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what's the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what is the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "raise"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why is"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why's"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "lower"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "decrease"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "increase"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 5, 
+            "value": "Alien", 
+            "entity": "sort:movie"
+          }
+        ], 
+        "intent": "ask_imdb:answer", 
+        "text": "Alien"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 9, 
+            "value": "Alien", 
+            "entity": "sort:movie"
+          }
+        ], 
+        "intent": "ask_imdb:answer_negation", 
+        "text": "not Alien"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "act"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "aboard"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "across"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "above"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "determine"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "after"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "about"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "against"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "along"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "among"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "as"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "say"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "at"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "on"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "atop"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "before"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "behind"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "below"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "ask"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "beneath"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "beside"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "between"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "beyond"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "but"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "by"
+      }, 
+      {
+        "entities": [], 
+        "intent": "ask_imdb:question::actors_to_search", 
+        "text": "the actors for a movie"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "come"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "down"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "during"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "except"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "ok"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "for"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "from"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "shoot"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "in"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "inside"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "into"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "less"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "like"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "near"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "go"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "wait"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "of"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "off"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "on"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "onto"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "opposite"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "out"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "hang on"
+      }
+    ], 
+    "entity_synonyms": [], 
+    "regex_features": []
+  }
+}

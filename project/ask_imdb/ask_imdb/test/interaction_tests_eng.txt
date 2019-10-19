@@ -1,0 +1,15 @@
+--- main menu
+S> Do you want to know actors or know year?
+
+
+--- actors (incremental request)
+U> i want to know the actors for a movie
+S> What movie? 
+U> alien
+S> The main actors are Tom Skerritt, Sigourney Weaver, Veronica Cartwright, Harry Dean Stanton
+
+--- year (incremental request)
+U> i want to know what year a movie was released
+S> What movie?
+U> alien
+S> It was released in 1979
