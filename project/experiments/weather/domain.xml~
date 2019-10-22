@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="WeatherDomain" is_super_domain="true">
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="wh_question" predicate="query"/>
+      <findout type="goal"/>
+    </plan>
+  </goal>
+
+  <parameters question_type="wh_question" predicate="results" source="device"
+              incremental="true" sort_order="alphabetic" max_spoken_alts="3">
+  </parameters>
+
+
+  <goal type="perform" action="second">
+    <plan>
+      <forget_all/>
+      <findout type="alt_question">
+        <alt>
+          <resolve type="wh_question" predicate="actors"/>
+        </alt>
+        <alt>
+          <resolve type="wh_question" predicate="release"/>
+        </alt>
+        <alt>
+          <resolve type="wh_question" predicate="plot"/>
+        </alt>
+        <alt>
+          <resolve type="wh_question" predicate="genre"/>
+        </alt>
+        <alt>
+          <resolve type="wh_question" predicate="results"/>
+        </alt>
+      </findout>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="actors">
+    <plan>
+      <findout type="wh_question" predicate="title_to_search"/>
+      <bind type="wh_question" predicate="production_type"/>
+      <dev_query predicate="actors" type="wh_question"/>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="release">
+    <plan>
+      <findout type="wh_question" predicate="title_to_search"/>
+      <dev_query predicate="release" type="wh_question"/>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="plot">
+    <plan>
+      <findout type="wh_question" predicate="title_to_search"/>
+      <bind type="wh_question" predicate="plot_extent"/>
+      <dev_query predicate="plot" type="wh_question"/>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="genre">
+    <plan>
+      <findout type="wh_question" predicate="title_to_search"/>
+      <dev_query predicate="genre" type="wh_question"/>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="results">
+    <plan>
+      <findout type="wh_question" predicate="query"/>
+      <dev_query predicate="results" type="wh_question"/>
+    </plan>
+  </goal>
+
+</domain>

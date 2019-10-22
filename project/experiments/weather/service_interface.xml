@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+
+  <query name="actors">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+      <parameter predicate="production_type" format="grammar_entry" default=""/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="release">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="plot">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+      <parameter predicate="plot_extent" format="grammar_entry" default="short"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="genre">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="results">
+    <parameters>
+      <parameter predicate="query" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+</service_interface>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar>
+
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  <question speaker="all" predicate="actors" type="wh_question">actors</question>
+  <question speaker="all" predicate="release" type="wh_question">release</question>
+  <question speaker="all" predicate="plot" type="wh_question">plot</question>
+  <question speaker="all" predicate="genre" type="wh_question">genre</question>
+  <question speaker="all" predicate="results" type="wh_question">results</question>
+
+   <question speaker="user" predicate="actors" type="wh_question">
+      <one-of>
+        <item>who plays in the <slot predicate="production_type"/> <slot predicate="title_to_search"/></item>
+        <item>who plays in <slot predicate="title_to_search"/></item>
+        <item>the actors for a movie</item>
+	<item>actors</item>
+      </one-of>
+   </question>
+
+   <question speaker="user" predicate="release" type="wh_question">
+      <one-of>
+	<item>year</item>
+	<item>the year for a movie</item>
+	<item>release</item>
+	<item>what year was <slot predicate="title_to_search"/> released</item>
+	<item>when did <slot predicate="title_to_search"/> come</item>
+      </one-of>
+   </question>
+
+   <question speaker="user" predicate="plot" type="wh_question">
+      <one-of>
+        <item>plot</item>
+        <item>the plot for a movie</item>
+        <item>what is <slot predicate="title_to_search"/> about</item>
+      </one-of>
+   </question>
+
+   <question speaker="user" predicate="genre" type="wh_question">
+      <one-of>
+        <item>genre</item>
+        <item>the genre for a movie</item>
+        <item>what genre is <slot predicate="title_to_search"/></item>
+      </one-of>
+   </question>
+
+   <question speaker="user" predicate="results" type="wh_question">
+      <one-of>
+        <item>results</item>
+      </one-of>
+   </question>
+
+   <question speaker="system" predicate="query" type="wh_question">what query</question>
+
+   <question speaker="system" predicate="title_to_search" type="wh_question">what title</question>
+   <question speaker="system" predicate="plot_extent" type="wh_question">short or full plot</question>
+   <question speaker="system" predicate="production_type" type="wh_question">which type of title</question>
+
+   <answer speaker="system" predicate="results" type="wh_question">The results are: <slot predicate="results"/></answer>
+
+   <answer speaker="system" predicate="actors" type="wh_question">The main actors are <slot predicate="actors"/></answer>
+   <answer speaker="system" predicate="release" type="wh_question">It was released in <slot predicate="release"/></answer>
+   <answer speaker="system" predicate="plot" type="wh_question">Here's the plot: <slot predicate="plot"/></answer>
+   <answer speaker="system" predicate="genre" type="wh_question">The genre is <slot predicate="genre"/></answer>
+   <answer speaker="system" predicate="ratings" type="wh_question">The ratings are  <slot predicate="ratings"/></answer>
+
+
+   <individual name="extent_short">
+     <one-of>
+       <item>short</item>
+     </one-of>
+   </individual>
+   
+   <individual name="extent_full">
+     <one-of>
+       <item>full</item>
+       <item>long</item>
+     </one-of>
+   </individual>
+
+   <individual name="type_movie">
+     <one-of>
+       <item>movie</item>
+     </one-of>
+   </individual>
+
+   <individual name="type_series">
+     <one-of>
+       <item>series</item>
+       <item>TV show</item>
+       <item>show</item>
+     </one-of>
+   </individual>
+
+   <individual name="type_episode">
+     <one-of>
+       <item>episode</item>
+     </one-of>
+   </individual>
+
+</grammar>
