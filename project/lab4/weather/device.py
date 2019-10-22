@@ -15,12 +15,12 @@ class WeatherDevice(DddDevice):
         else:
             return False
 
-    def getData(self, title, extent="short", production_type="", year=""):
+    def getData(self, title, extent="short", production_type=""):
 
         #Default for type is movie but doesn't need to be specified
 
         apikey='37ea90c2'
-        url = 'http://www.omdbapi.com/?t=%s&plot=%s&type=%s&y=%s&apikey=%s' % (title,extent,production_type,year,apikey)
+        url = 'http://www.omdbapi.com/?t=%s&plot=%s&type=%s&apikey=%s' % (title,extent,production_type,apikey)
         request = Request(url)
         response = urlopen(request)
         data = response.read()
@@ -29,7 +29,7 @@ class WeatherDevice(DddDevice):
     class actors(DeviceWHQuery):
         def perform(self, title, production_type):
             title = self.device.clean_query(title)
-            data = self.device.getData(title, "", production_type, "")
+            data = self.device.getData(title, "", production_type)
 
             if self.device.has_content(data):
                 actors = data["Actors"]
@@ -56,7 +56,7 @@ class WeatherDevice(DddDevice):
         def perform(self, title, extent):
             title = self.device.clean_query(title)
             extent = extent.split()[0]
-            data = self.device.getData(title, extent, "", "")
+            data = self.device.getData(title, extent, "")
 
             if self.device.has_content(data):
                 plot = data["Plot"]
