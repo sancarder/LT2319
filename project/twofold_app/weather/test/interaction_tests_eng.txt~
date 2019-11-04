@@ -1,0 +1,92 @@
+--- main menu
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> episodes for a specific show
+
+--- One-shot request (movie)
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> movies and tv series
+S> Do you want to know actors, know release, know plot, know genre or know ratings?
+U> the release year for Lost in translation 
+S> It was released in *
+
+--- Incremental request (movie)
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> movies and tv series
+S> Do you want to know actors, know release, know plot, know genre or know ratings?
+U> the actors for a movie 
+S> What title? 
+U> alien
+S> The main actors are *
+
+--- One-shot request (episode)
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> episodes on a specific show
+S> Do you want to know an episode title, know the director of an episode, know the plot for an episode or know ratings for an episode?
+U> what are the ratings for episode one, season four on Grey's Anatomy?
+S> The ratings are *
+
+--- Incremental request (episode)
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> episodes on a specific show
+S> Do you want to know an episode title, know the director of an episode, know the plot for an episode or know ratings for an episode?
+U> an episode title
+S> What show : grey's anatomy, friends or homeland?
+U> friends
+S> What season?
+U> season one
+S> What episode?
+U> episode four
+S> The episode is called *
+U> episodes for	  a specific show
+
+--- Over-answering (episode)
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> episodes on a specific show
+S> Do you want to know an episode title, know the director of an episode, know the plot for an episode or know ratings for an episode?
+U> an episode title in season one of Grey's Anatomy
+S> What episode?
+U> episode three
+S> The episode is called *
+
+--- Other-answering (episode)
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> episodes on a specific show
+S> Do you want to know an episode title, know the director of an episode, know the plot for an episode or know ratings for an episode?
+U> the plot for an episode
+S> What show : grey's anatomy, friends or homeland?
+U> season two 
+S> What show : grey's anatomy, friends or homeland?
+U> grey's Anatomy
+S> What episode? 
+U> episode six
+S> Here's the plot: *
+
+--- Task recognition (episode)
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> episodes on a specific show
+S> Do you want to know an episode title, know the director of an episode, know the plot for an episode or know ratings for an episode?
+U> friends
+S> Do you want to know an episode title, know the director of an episode, know the plot for an episode or know ratings for an episode?
+U> an episode title
+S> What season?
+U> season five
+S> What episode?
+U> episode seven
+S> The episode is called *
+
+--- Switch task anytime and context recall (episode)
+S> Do you want to ask about movies and tv series or ask about episodes on a specific show?
+U> episodes on a specific show
+S> Do you want to know an episode title, know the director of an episode, know the plot for an episode or know ratings for an episode?
+U> the director of an episode
+S> What show : grey's anatomy, friends or homeland?
+U> Grey's Anatomy 
+S> What season?
+U> what is the title of episode four of season one
+S> The episode is called No Man's Land. 
+U> 
+S> Returning to the director of an episode. What season?
+U> season one
+S> What episode?
+U> episode four
+S> The episode was directed by *

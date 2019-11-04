@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+
+  <query name="show_to_search">
+    <parameters/>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="actors">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+      <parameter predicate="production_type" format="grammar_entry" default=""/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="release">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="plot">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+      <parameter predicate="plot_extent" format="grammar_entry" default="short"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="genre">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="ratings">
+    <parameters>
+      <parameter predicate="title_to_search" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="episode_title">
+    <parameters>
+      <parameter predicate="show_to_search" format="grammar_entry"/>
+      <parameter predicate="season_to_search" format="grammar_entry"/>
+      <parameter predicate="episode_to_search" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="episode_director">
+    <parameters>
+      <parameter predicate="show_to_search" format="grammar_entry"/>
+      <parameter predicate="season_to_search" format="grammar_entry"/>
+      <parameter predicate="episode_to_search" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="episode_ratings">
+    <parameters>
+      <parameter predicate="show_to_search" format="grammar_entry"/>
+      <parameter predicate="season_to_search" format="grammar_entry"/>
+      <parameter predicate="episode_to_search" format="grammar_entry"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+  <query name="episode_plot">
+    <parameters>
+      <parameter predicate="show_to_search" format="grammar_entry"/>
+      <parameter predicate="season_to_search" format="grammar_entry"/>
+      <parameter predicate="episode_to_search" format="grammar_entry"/>
+      <parameter predicate="plot_extent" format="grammar_entry" default="short"/>
+    </parameters>
+    <target>
+      <device_module device="WeatherDevice"/>
+    </target>
+  </query>
+
+</service_interface>

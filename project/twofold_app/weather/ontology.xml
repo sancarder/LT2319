@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="WeatherOntology">
+
+  <sort name="extent"/>
+  <sort name="production"/>
+  <sort name="episode"/>
+  <sort name="season"/>
+  <sort name="show"/>
+
+  <action name="ask_about_any_title"/>
+  <action name="ask_about_specific_show"/>
+
+  <predicate name="title_to_search" sort="string"/>
+  <predicate name="actors" sort="string"/>
+  <predicate name="release" sort="string"/>
+  <predicate name="plot" sort="string"/>
+  <predicate name="plot_extent" sort="extent"/>
+  <predicate name="genre" sort="string"/>
+  <predicate name="ratings" sort="string"/>
+  <predicate name="production_type" sort="production"/>
+
+  <predicate name="show_to_search" sort="show"/>
+  <predicate name="episode_to_search" sort="episode"/>
+  <predicate name="season_to_search" sort="season"/>
+  <predicate name="episode_title" sort="string"/>
+  <predicate name="episode_ratings" sort="string"/>
+  <predicate name="episode_plot" sort="string"/>
+  <predicate name="episode_director" sort="string"/>
+
+  <individual name="extent_full" sort="extent"/>
+  <individual name="extent_short" sort="extent"/>
+  <individual name="type_movie" sort="production"/>
+  <individual name="type_series" sort="production"/>
+  <individual name="type_episode" sort="production"/>
+
+  <individual name="show_greys_anatomy" sort="show"/>
+  <individual name="show_friends" sort="show"/>
+  <individual name="show_homeland" sort="show"/>
+
+  <individual name="season_one" sort="season"/>
+  <individual name="season_two" sort="season"/>
+  <individual name="season_three" sort="season"/>
+  <individual name="season_four" sort="season"/>
+  <individual name="season_five" sort="season"/>
+  <individual name="season_six" sort="season"/>
+  <individual name="season_seven" sort="season"/>
+  <individual name="season_eight" sort="season"/>
+  <individual name="season_nine" sort="season"/>
+  <individual name="season_ten" sort="season"/>
+
+  <individual name="episode_one" sort="episode"/>
+  <individual name="episode_two" sort="episode"/>
+  <individual name="episode_three" sort="episode"/>
+  <individual name="episode_four" sort="episode"/>
+  <individual name="episode_five" sort="episode"/>
+  <individual name="episode_six" sort="episode"/>
+  <individual name="episode_seven" sort="episode"/>
+  <individual name="episode_eight" sort="episode"/>
+  <individual name="episode_nine" sort="episode"/>
+  <individual name="episode_ten" sort="episode"/>
+
+
+</ontology>

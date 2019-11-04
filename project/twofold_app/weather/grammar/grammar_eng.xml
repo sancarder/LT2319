@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar>
+
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+    </one-of>
+  </action>
+  
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  <action name="ask_about_any_title">
+    <one-of>
+      <item>ask about movies and tv series</item>
+      <item>movies and tv series</item>
+      <item>movies</item>
+      <item>tv series</item>
+    </one-of>
+  </action>
+
+  <action name="ask_about_specific_show">
+    <one-of>
+      <item>ask about episodes on a specific show</item>
+      <item>episodes on a specific show</item>
+      <item>episodes</item>
+    </one-of>
+  </action>
+
+  <question speaker="all" predicate="actors" type="wh_question">actors</question>
+  <question speaker="all" predicate="release" type="wh_question">release</question>
+  <question speaker="all" predicate="plot" type="wh_question">plot</question>
+  <question speaker="all" predicate="genre" type="wh_question">genre</question>
+  <question speaker="all" predicate="ratings" type="wh_question">ratings</question>
+
+  <question speaker="all" predicate="episode_title" type="wh_question">an episode title</question>
+  <question speaker="all" predicate="episode_plot" type="wh_question">the plot for an episode</question>
+  <question speaker="all" predicate="episode_director" type="wh_question">the director of an episode</question>
+  <question speaker="all" predicate="episode_ratings" type="wh_question">ratings for an episode</question>
+
+  <question speaker="all" predicate="title_to_search" type="wh_question">what title</question>
+  <question speaker="all" predicate="show_to_search" type="wh_question">what show</question>
+  <question speaker="all" predicate="season_to_search" type="wh_question">what season</question>
+  <question speaker="all" predicate="episode_to_search" type="wh_question">what episode</question>
+
+  <question speaker="user" predicate="actors" type="wh_question">
+    <one-of>
+      <item>the actors for the <slot predicate="production_type"/> <slot predicate="title_to_search"/></item>
+      <item>who plays in <slot predicate="title_to_search"/></item>
+      <item>the actors for a movie</item>
+      <item>actors</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="release" type="wh_question">
+    <one-of>
+      <item>year</item>
+      <item>the year for a movie</item>
+      <item>release</item>
+      <item>the release year for <slot predicate="title_to_search"/></item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="plot" type="wh_question">
+    <one-of>
+      <item>plot</item>
+      <item>the plot for a movie</item>
+      <item>the <slot predicate="plot_extent"/> plot for <slot predicate="title_to_search"/></item>
+      <item>the plot for <slot predicate="title_to_search"/></item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="genre" type="wh_question">
+    <one-of>
+      <item>genre</item>
+      <item>the genre for a movie</item>
+      <item>what genre is <slot predicate="title_to_search"/></item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="ratings" type="wh_question">
+    <one-of>
+      <item>ratings</item>
+      <item>the ratings for a movie</item>
+      <item>what are the ratings for <slot predicate="title_to_search"/></item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="episode_plot" type="wh_question">
+    <one-of>
+      <item>the plot for <slot predicate="episode_to_search"/>, <slot predicate="season_to_search"/> on <slot predicate="show_to_search"/></item>
+      <item>the plot for an episode in <slot predicate="season_to_search"/> of <slot predicate="show_to_search"/></item>
+      <item>the plot for <slot predicate="episode_to_search"/> of <slot predicate="season_to_search"/></item>
+      <item>the plot for an episode in <slot predicate="show_to_search"/></item>
+      <item>the plot for an episode</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="episode_ratings" type="wh_question">
+    <one-of>
+      <item>what are the ratings for <slot predicate="episode_to_search"/>, <slot predicate="season_to_search"/> on <slot predicate="show_to_search"/></item>
+      <item>the ratings for <slot predicate="episode_to_search"/>, <slot predicate="season_to_search"/> on <slot predicate="show_to_search"/></item>
+      <item>ratings for an episode in <slot predicate="season_to_search"/> of <slot predicate="show_to_search"/></item>
+      <item>what are the ratings for <slot predicate="episode_to_search"/> of <slot predicate="season_to_search"/></item>
+      <item>ratings for <slot predicate="episode_to_search"/> of <slot predicate="season_to_search"/></item>
+      <item>ratings for an episode in <slot predicate="show_to_search"/></item>
+      <item>ratings for an episode</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="episode_title" type="wh_question">
+    <one-of>
+      <item>what is the title of <slot predicate="episode_to_search"/>, <slot predicate="season_to_search"/> on <slot predicate="show_to_search"/></item>
+      <item>the title of <slot predicate="episode_to_search"/>, <slot predicate="season_to_search"/> on <slot predicate="show_to_search"/></item>
+      <item>what is the title of <slot predicate="episode_to_search"/> of <slot predicate="season_to_search"/></item>
+      <item>an episode title in <slot predicate="season_to_search"/> of <slot predicate="show_to_search"/></item>
+      <item>the title for <slot predicate="episode_to_search"/> of <slot predicate="season_to_search"/></item>
+      <item>an episode title for <slot predicate="show_to_search"/></item>
+      <item>an episode title</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="episode_director" type="wh_question">
+    <one-of>
+      <item>who directed <slot predicate="episode_to_search"/>, <slot predicate="season_to_search"/> on <slot predicate="show_to_search"/></item>
+      <item>who directed <slot predicate="episode_to_search"/> of <slot predicate="season_to_search"/></item>
+      <item>the director of <slot predicate="episode_to_search"/>, <slot predicate="season_to_search"/> on <slot predicate="show_to_search"/></item>
+      <item>the director of an episode in <slot predicate="season_to_search"/> of <slot predicate="show_to_search"/></item>
+      <item>the director of <slot predicate="episode_to_search"/> of <slot predicate="season_to_search"/></item>
+      <item>the director of an episode of <slot predicate="show_to_search"/></item>
+      <item>the director of an episode</item>
+    </one-of>
+  </question>
+
+  <question speaker="system" predicate="title_to_search" type="wh_question">what title</question>
+  <question speaker="system" predicate="plot_extent" type="wh_question">short or full plot</question>
+  <question speaker="system" predicate="production_type" type="wh_question">which type of title</question>
+
+  <question speaker="system" predicate="show_to_search" type="wh_question">what show</question>  
+  <question speaker="system" predicate="season_to_search" type="wh_question">what season</question>
+  <question speaker="system" predicate="episode_to_search" type="wh_question">what episode</question>
+
+  <answer speaker="system" predicate="actors" type="wh_question">The main actors are <slot predicate="actors"/></answer>
+  <answer speaker="system" predicate="release" type="wh_question">It was released in <slot predicate="release"/></answer>
+  <answer speaker="system" predicate="plot" type="wh_question">Here's the plot: <slot predicate="plot"/></answer>
+  <answer speaker="system" predicate="genre" type="wh_question">The genre is <slot predicate="genre"/></answer>
+  <answer speaker="system" predicate="ratings" type="wh_question">The ratings are <slot predicate="ratings"/></answer>
+
+  <answer speaker="system" predicate="episode_plot" type="wh_question">Here's the plot: <slot predicate="episode_plot"/></answer>
+  <answer speaker="system" predicate="episode_title" type="wh_question">The episode is called <slot predicate="episode_title"/></answer>
+  <answer speaker="system" predicate="episode_ratings" type="wh_question">The ratings are <slot predicate="episode_ratings"/></answer>
+  <answer speaker="system" predicate="episode_director" type="wh_question">The episode was directed by <slot predicate="episode_director"/></answer>
+
+  <individual name="extent_short">
+    <one-of>
+      <item>short</item>
+    </one-of>
+  </individual>
+   
+  <individual name="extent_full">
+    <one-of>
+      <item>full</item>
+      <item>long</item>
+    </one-of>
+  </individual>
+
+  <individual name="type_movie">
+    <one-of>
+      <item>movie</item>
+    </one-of>
+  </individual>
+  
+  <individual name="type_series">
+    <one-of>
+      <item>series</item>
+      <item>TV show</item>
+      <item>show</item>
+    </one-of>
+  </individual>
+
+  <individual name="type_episode">
+    <one-of>
+      <item>episode</item>
+    </one-of>
+  </individual>
+
+  <individual name="show_greys_anatomy">grey's anatomy</individual>
+  <individual name="show_friends">friends</individual>
+  <individual name="show_homeland">homeland</individual>
+
+  <individual name="season_one">
+    <one-of>
+      <item>season one</item>
+      <item>season 1</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_two">
+    <one-of>
+      <item>season two</item>
+      <item>season 2</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_three">
+    <one-of>
+      <item>season three</item>
+      <item>season 3</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_four">
+    <one-of>
+      <item>season four</item>
+      <item>season 4</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_five">
+    <one-of>
+      <item>season five</item>
+      <item>season 5</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_six">
+    <one-of>
+      <item>season six</item>
+      <item>season 6</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_seven">
+    <one-of>
+      <item>season seven</item>
+      <item>season 7</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_eight">
+    <one-of>
+      <item>season eight</item>
+      <item>season 8</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_nine">
+    <one-of>
+      <item>season nine</item>
+      <item>season 9</item>
+    </one-of>
+  </individual>
+
+  <individual name="season_ten">
+    <one-of>
+      <item>season ten</item>
+      <item>season 10</item>
+    </one-of>
+  </individual>
+
+
+  <individual name="episode_one">
+    <one-of>
+      <item>episode one</item>
+      <item>episode 1</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_two">
+    <one-of>
+      <item>episode two</item>
+      <item>episode 2</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_three">
+    <one-of>
+      <item>episode three</item>
+      <item>episode 3</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_four">
+    <one-of>
+      <item>episode four</item>
+      <item>episode 4</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_five">
+    <one-of>
+      <item>episode five</item>
+      <item>episode 5</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_six">
+    <one-of>
+      <item>episode six</item>
+      <item>episode 6</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_seven">
+    <one-of>
+      <item>episode seven</item>
+      <item>episode 7</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_eight">
+    <one-of>
+      <item>episode eight</item>
+      <item>episode 8</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_nine">
+    <one-of>
+      <item>episode nine</item>
+      <item>episode 9</item>
+    </one-of>
+  </individual>
+
+  <individual name="episode_ten">
+    <one-of>
+      <item>episode ten</item>
+      <item>episode 10</item>
+    </one-of>
+  </individual>
+
+</grammar>
