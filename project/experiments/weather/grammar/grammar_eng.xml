@@ -13,6 +13,12 @@
     </one-of>
   </action>
 
+  <action name="select_result">
+    <one-of>
+      <item>select</item>
+    </one-of>
+  </action>
+
   <action name="up">
     <one-of>
       <item>up</item>
@@ -26,6 +32,8 @@
   <question speaker="all" predicate="plot" type="wh_question">plot</question>
   <question speaker="all" predicate="genre" type="wh_question">genre</question>
   <question speaker="all" predicate="results" type="wh_question">results</question>
+
+  <question speaker="system" predicate="howto_colour" type="">choose a colour</question>
 
    <question speaker="user" predicate="actors" type="wh_question">
       <one-of>

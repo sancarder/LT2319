@@ -21,6 +21,8 @@
   <question speaker="all" predicate="genre" type="wh_question">genre</question>
   <question speaker="all" predicate="ratings" type="wh_question">ratings</question>
 
+  <question speaker="all" predicate="title_to_search" type="wh_question">what title</question>
+
   <question speaker="user" predicate="actors" type="wh_question">
     <one-of>
       <item>the actors for the <slot predicate="production_type"/> <slot predicate="title_to_search"/></item>

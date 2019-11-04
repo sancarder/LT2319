@@ -3,22 +3,22 @@
   <goal type="perform" action="top">
     <plan>
       <forget_all/>
-      <findout type="wh_question" predicate="query"/>
       <findout type="goal"/>
     </plan>
   </goal>
 
+ <goal type="perform" action="select_result">
+   <plan>
+     <findout type="wh_question" predicate="query"/>
+   </plan>
+ </goal>
+
  <parameters predicate="query" question_type="wh_question"
-            graphical_type="list" source="device" device="weatherDevice">
+            graphical_type="list" source="device" device="WeatherDevice">
     <dev_query predicate="results" type="wh_question"/>
  </parameters>
 
-  <parameters question_type="wh_question" predicate="results" source="device"
-              incremental="true" sort_order="alphabetic" max_spoken_alts="3">
-  </parameters>
-
-
-  <goal type="perform" action="second">
+ <goal type="perform" action="second">
     <plan>
       <forget_all/>
       <findout type="alt_question">
